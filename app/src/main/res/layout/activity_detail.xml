@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".DetailActivity">
+    tools:context="ui.DetailActivity">
 
     <!-- Adding an image to the prominent top app bar:
          Reference: https://material.io/components/app-bars-top/android#regular-top-app-bar -->
@@ -60,6 +60,7 @@
                 android:contentDescription="@string/cd_home_team"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+                tools:ignore="ImageContrastCheck"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -155,6 +156,7 @@
                 android:id="@+id/tvAwayTeamScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:layout_constraintBottom_toBottomOf="@+id/ivAwayTeam"
