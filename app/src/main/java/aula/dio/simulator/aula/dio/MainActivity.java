@@ -10,11 +10,14 @@ import aula.dio.simulator.aula.dio.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    private ActivityMainBinding binding;
 
-        aula.dio.simulator.aula.dio.databinding.ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+            setContentView(binding.getRoot());
+
     }
 }

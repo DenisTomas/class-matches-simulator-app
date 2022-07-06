@@ -3,11 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Denis/Aulas DIO/Simulato-raula-DIO/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/Denis/Aulas DIO/Simulato-raula-DIO/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.131" />
         <entry key="..\:/Users/Denis/Aulas DIO/Simulato-raula-DIO/app/src/main/res/drawable/ic_simulate.xml" value="0.2045" />
-        <entry key="..\:/Users/Denis/Aulas DIO/Simulato-raula-DIO/app/src/main/res/layout/activity_detail.xml" value="0.1" />
-        <entry key="..\:/Users/Denis/Aulas DIO/Simulato-raula-DIO/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Denis/Aulas DIO/Simulato-raula-DIO/app/src/main/res/layout/match_item.xml" value="0.22" />
+        <entry key="..\:/Users/Denis/Aulas DIO/Simulato-raula-DIO/app/src/main/res/layout/activity_detail.xml" value="0.18" />
+        <entry key="..\:/Users/Denis/Aulas DIO/Simulato-raula-DIO/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Denis/Aulas DIO/Simulato-raula-DIO/app/src/main/res/layout/match_item.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -20,7 +21,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.1" />
+        <option name="scale" value="0.22" />
       </ProjectState>
     </option>
   </component>
