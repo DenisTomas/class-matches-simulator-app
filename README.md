@@ -8,3 +8,5 @@ Class on native app on Kotlin for Android. This repository is sorted in branches
 2. Components, Layouts, UI/UX for Android Apps
     - [release/Components-Layouts-ui-ux-for-android-apps](https://github.com/DenisTomas/class-matches-simulator-app/tree/release/components-layouts-UI-UX-on-apps-android)
 
+3. Components, Layouts, UI/UX for Android Apps
+    - [release/java-e-kotlin-juntos-construindo-apps-android]([https://github.com/DenisTomas/class-matches-simulator-app/tree/release/components-layouts-UI-UX-on-apps-android](https://github.com/DenisTomas/class-matches-simulator-app/tree/release/java-e-kotlin-juntos-construindo-apps-android))
