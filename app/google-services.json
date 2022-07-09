@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "22109768231",
+    "project_id": "matches-simulator-dio-class",
+    "storage_bucket": "matches-simulator-dio-class.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22109768231:android:e851a7a82d14e70d569c02",
+        "android_client_info": {
+          "package_name": "aula.dio.simulator.aula.dio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22109768231-tj7dt27uq05se1rrb69dgtt6rp90gng9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS11rdLbCqMmGcPGLbyjA85kinS-5saYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22109768231-tj7dt27uq05se1rrb69dgtt6rp90gng9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

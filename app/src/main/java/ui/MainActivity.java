@@ -4,12 +4,14 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private MatchesAPI matchesApi;
-    private MatchesAdapter matchesAdapter;
+    private MatchesAdapter matchesAdapter = new MatchesAdapter(Collections.emptyList());
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         setupMatchesList();
         setupMatchesRefresh();
         setupFloatingActionButton();
-
     }
 
     private void setupHttpClient() {
@@ -56,9 +57,9 @@ public class MainActivity extends AppCompatActivity {
     private void setupMatchesList() {
         binding.rvMatches.setHasFixedSize(true);
         binding.rvMatches.setLayoutManager(new LinearLayoutManager(this));
+        binding.rvMatches.setAdapter(matchesAdapter);
         findMatchesApi();
     }
-
 
 
     private void setupMatchesRefresh() {
@@ -90,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         binding.srlMatches.setRefreshing(true);
         matchesApi.getMatches().enqueue(new Callback<List<Matches>>() {
             @Override
-            public void onResponse(Call<List<Matches>> call, Response<List<Matches>> response) {
+            public void onResponse(@NonNull Call<List<Matches>> call, @NonNull Response<List<Matches>> response) {
                 if (response.isSuccessful()) {
                     List<Matches> matches = response.body();
                     matchesAdapter = new MatchesAdapter(matches);
@@ -102,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<List<Matches>> call, Throwable t) {
+            public void onFailure(@NonNull Call<List<Matches>> call, @NonNull Throwable t) {
                 showErrorMessage();
                 binding.srlMatches.setRefreshing(false);
             }
